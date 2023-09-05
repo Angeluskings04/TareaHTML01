@@ -1,83 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html</title>
-    <style>
-        * { 
-          margin:0;
-          padding:0;
-        }
-        a:link, a:visited, a:hover, a:active {
-          color:#0f0;
-          font-size:16px;
-        }
-        body {
-          background:#eee;
-          font-family:verdana;
-        }
-        h1 {
-          color:rgb(0, 0, 0);
-          font-size:24px;
-        }
-        p {
-          font-size:16px;
-        }   
-        ul {
-          list-style-type:circle;
-        }
-        #cabecera {
-          color:rgb(255, 0, 0);
-          background-color:#000;
-          padding:10px;
-        }
-        #contenedor {
-          margin:0 auto;
-          width:800px;
-        }
-        #contenido {
-          background-color:#ddd;
-          float:left;
-          height:500px;
-          padding:10px;
-          width:560px;
-        }
-        #menu {
-          background-color:#999;
-          float:left;
-          height:480px;
-          padding:20px;
-          width:180px;
-        }
-        #pie { 
-          background-color:#bbb;
-          clear:both;
-          color:#900;
-          padding:10px;
-          text-align:center;
-        }
-      </style>
 </head>
 <body>
-    <div id="cabecera">
-        <p>HTML(HyperText Markup Language).</p>
-    </div>
-    <div id="menu">
-        <h1>Indice</h1>
-        <ul>
-            <li>Origen de HTML</li>
-            <LI>Principales versiones</LI>
-            <li>Etiquetas comunes y otras mas utiles</li>
-        </ul>
-    </div>
-    <div id="contenido">
-        <h2>Origen de HTML </h2>
-        <p align="left">La historia de <strong>HTML</strong>, a pesar de ser relativamente reciente, es vasta e increíblemente fascinante. A continuación, ofrecemos un breve resumen de este trayecto. 
-            El nacimiento de HTML data de 1980, cuando el físico Tim Berners-Lee, miembro del CERN (http://www.cern.ch/) (Organización Europea para la Investigación Nuclear), sugirió un innovador sistema de "hipertexto" para compartir documentos. 
+  <main>
+    <h1>HTML(HyperText Markup Language).</h1>
+    <h2>Indice</h2>
+    <ul>
+        <li>Origen de HTML</li>
+        <LI>Principales versiones</LI>
+        <li>Etiquetas comunes y otras mas utiles</li>
+    </ul>
+    
+    <article>
+      <h2>Origen de HTML </h2>
+      <p>La historia de <strong>HTML</strong>, a pesar de ser relativamente reciente, es vasta e increíblemente fascinante. A continuación, ofrecemos un breve resumen de este trayecto. 
+            El nacimiento de HTML data de 1980, cuando el físico <strong>Tim Berners-Lee</strong>, miembro del CERN (http://www.cern.ch/) (Organización Europea para la Investigación Nuclear), sugirió un innovador sistema de "hipertexto" para compartir documentos. 
             Aunque la idea de "hipertexto" ya se había ideado unos años antes para facilitar el acceso a información complementaria en documentos electrónicos, estos sistemas terminaron siendo, de forma inesperada, 
             los antecesores de los actuales enlaces web. Tim Berners-Lee, tras perfeccionar su sistema de "hipertexto", lo presentó en un evento destinado a innovar en sistemas de "hipertexto" para Internet, que era muy diferente al Internet actual. 
-            En colaboración con el ingeniero Robert Cailliau, Berners-Lee refinó su idea y juntos propusieron el WorldWideWeb o W3, que, como se puede observar, fue el proyecto seleccionado en el evento. </p>
-    </div>
+            En colaboración con el ingeniero Robert Cailliau, Berners-Lee refinó su idea y juntos propusieron el <strong>WorldWideWeb</strong> o <strong>W3</strong>, que, como se puede observar, fue el proyecto seleccionado en el evento. 
+      </p>
+            <img src="img/images.jpg" alt="Fotografia de Tim Berners-Lee">
+    </article>
+    <article>
+    <h2>Principales versiones</h2>
+    <ol>
+      <li>HTML (1991)
+        <ul>
+          <li>Esta fue la primera iteración de HTML creada por Tim Berners-Lee.</li>
+          <li>Contenía solo 18 elementos de marcado.</li>
+          <li>Estos elementos básicos permitían la estructuración de documentos y la creación de enlaces, y sentaron las bases para el desarrollo futuro del lenguaje.</li>
+        </ul>
+      </li>
+      <li>HTML 2.0(1995)
+        <ul>
+          <li>Primera versión estandarizada y oficial de HTML.</li>
+          <li>Introdujo nuevos elementos y atributos, muchos de los cuales todavía están en uso hoy en día.</li>
+          <li>Incluyó soporte para formularios, permitiendo la interacción del usuario con páginas web.</li>
+        </ul>
+      </li>
+      <li>HTML 3.0(1997)
+        <ul>
+          <li>Introdujo características como tablas, applets y texto centrado.</li>
+          <li>Sin embargo, debido a su ambición y la rapidez con la que se propuso, fue superado por la siguiente versión antes de ser ampliamente adoptado.</li>
+        </ul>
+      </li>
+      <li>HTML 3.2
+        <ul>
+          <li>Refinó y formalizó muchos de los elementos introducidos en 3.0.</li>
+          <li>Introdujo soporte para scripts (como <a href="Js.html">JavaScript</a>), lo que permitió una mayor interactividad en las páginas web.</li>
+          <li>Añadió más soporte para la estilización visual, aunque muchos de estos atributos de estilo luego fueron desaprobados en favor de usar <a href="Css.html">CSS</a>.</li>
+        </ul>
+      </li>
+      <li>HTML 4.0 (1997) y HTML 4.01 (1999)
+        <ul>
+          <li>Introdujo una distinción entre HTML "estricto" (sin presentaciones estilizadas) y HTML "transicional" (con estilizaciones).
+            Mejoró la accesibilidad y la internacionalización.</li>
+          <li>Fomentó la separación entre estructura y presentación, animando a los diseñadores a usar hojas de estilo en cascada (CSS).</li>
+          <li>Introdujo el doctype, lo que permite a los navegadores interpretar y renderizar correctamente el contenido.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>Estas primeras versiones sentaron las bases para el desarrollo web moderno. Cada versión trajo consigo una expansión de las capacidades de HTML, permitiendo a los diseñadores y desarrolladores crear experiencias web más ricas y dinámicas.</p>
+  </article>
+    <h2>Etiquetas comunes y otras mas utiles</h2>
+    <ul>
+      <li>`&lt;h1>`, `&lt;h2>`,... `&lt;h6>`:Encabezados de nivel 1 al 6. </li>
+      <li>`&lt;<strong>br</strong>>`: Salto de línea.</li>
+      <li>`&lt;<strong>a</strong>>`:Enlace o ancla.</li>
+      <li>`&lt;<strong>head</strong>>`:Contiene metadatos y enlaces a hojas de estilo y scripts. </li>
+      <li>`&lt; <strong>tfoott</strong> >` : Pie de la tabla.</li>
+      <li>`&lt; <strong>ins</strong>>`: Texto insertado.</li>
+    </ul>
+  </main>
+
+  <h3>Extras</h3>
+  <ul>
+    <li><a href="Css.html">Aprende un poco de CSS</a></li>
+    <li><a href="Js.html">Una mirada a JavaScript</a></li>
+  </ul>
 </body>
 </html>
